@@ -2,7 +2,7 @@ JT's Cultural Blog:
 
 Can't wait for DBC to get rolling!
 
-Sunday November 22, 2014
+Sunday November 23, 2014
 
 When I started researching coding bootcamps a few months ago, quite a few of them sounded technically sound, like they would teach me how to become an excellent coder.  In addition, Dev Bootcamp seemed to also emphasize the personal aspects of being a web developer.  I was impressed by their efforts to teach the softer skills necessary to succeed in the industry: how to pair, how to give and receive constructive feedback, the stress they put on emotional intelligence.  So my initial impressions of DBC were very positive.  
 
