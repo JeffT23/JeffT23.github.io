@@ -1,0 +1,27 @@
+.header{
+	font-size: 20px; 
+	font-family: Arial; 
+	text-align: center; 
+	border: solid black 2px;
+	border-radius:25px;
+	padding:0;
+	display:block;
+}
+
+#date{margin-left:100px;
+}
+
+.content{
+	font-size:15px; 
+	font-family: Times,Arial,serif; 
+	border: solid black 2px;
+	text-align:left; 
+	margin-right:100px;
+	margin-left:100px;
+	height: 500px;
+	border-radius:15px;
+	display:block;
+}
+
+body{background-color: #d8d8d8;
+	}
