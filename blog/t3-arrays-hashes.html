@@ -18,25 +18,26 @@
 
   Arrays are ordered, integer-indexed collections of any object. Array indexing starts at 0, and increases from left to right.  Or one can work right to left with a negative index, with -1 indicating the last element in the array, and growing more negative as we work our way to the front.  Being that today is Sunday, here is an array example for you football fans.  I’ve created a new array in the IRB screen that lists the best NFL franchises in terms of number of Super Bowl rings.  
 
-  BestNFLFranchises = ["Steelers", "Cowboys", "49ers", "Packers", "Giants", “Patriots”]
+  <p>
+  BestNFLFranchises = ["Steelers", "Cowboys", "49ers", "Packers", "Giants", “Patriots”] </p>
 
-  irb(main):004:0> BestNFLFranchises[0]
-  => "Steelers"
+  <p>irb(main):004:0> BestNFLFranchises[0]
+  => "Steelers"</p>
 
-  irb(main):005:0> BestNFLFranchises[-6]
-  => “Steelers"
+  <p>irb(main):005:0> BestNFLFranchises[-6]
+  => “Steelers"</p>
   </p>
   <p>
-  As you can see, the greatest franchise (without a doubt, the Steelers) can be referenced with the 0 index, left to right, or -6 going the other way, both denoting the first item on the list.  
+  As you can see, the greatest franchise (without a doubt, the Steelers) can be referenced with the 0 index, left to right, or -6 going the other way, both denoting the first item on the list. </p> 
 
-  Let’s move on to hashes.  Hashes are a collection type revolving around key value pairs.  Indexing isn’t based on an integer value, but rather on the order in which the keys are typed in.  Continuing with our Super Bowls example, we can list the key of team name and assign a corresponding value that ties to the number of rings, like so: 
+  <p>Let’s move on to hashes.  Hashes are a collection type revolving around key value pairs.  Indexing isn’t based on an integer value, but rather on the order in which the keys are typed in.  Continuing with our Super Bowls example, we can list the key of team name and assign a corresponding value that ties to the number of rings, like so: </p>
 
-  BestNFLFranchises= {"Steelers"=> 6, "Cowboys"=>5, "49ers"=>5 , "Packers"=> 4, "Giants" => 4, "Patriots"=> 3}
+  <p>BestNFLFranchises= {"Steelers"=> 6, "Cowboys"=>5, "49ers"=>5 , "Packers"=> 4, "Giants" => 4, "Patriots"=> 3}</p>
 
-  We can then call upon a certain franchise by name and the program should spit out the corresponding value, like so: 
+  <p>We can then call upon a certain franchise by name and the program should spit out the corresponding value, like so: <p>
 
-  irb(main):002:0> BestNFLFranchises["Steelers"]
-  => 6
+  <p>irb(main):002:0> BestNFLFranchises["Steelers"]
+  => 6</p>
 
     </p>
     <p>
