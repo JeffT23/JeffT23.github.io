@@ -17,23 +17,23 @@
       I want to do a brief write-up for you about the #group_by method in the Enumerable module of Ruby.  Simply put, the #group_by method breaks a collection into groups based on given criteria.  First, the user inputs a block containing the criteria by which the items in the collection will be grouped.  Group_by then returns a hash where each key represents a group. Each key’s corresponding value is an array containing the members of that group.
     </p>
     <p>
-      This is how #group_by works for an array of an numbers (example courtesy of ruby-doc.org):
+      This is how #group_by works for an array of numbers (example courtesy of ruby-doc.org):
     </p>
     <p>
      (1..6).group_by { |i| i%3 } <br>   
-      #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}
+      => {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}
     </p>
     <p>
-      As you can see, each index key represents a subgroup of the original array; all 6 numbers are accounted for among the 3 keys.  Let’s now see how group_by can potentially work for a string array:
+      As you can see, each index key represents a subgroup of the original array; all 6 numbers are accounted for among the 3 keys.  Let’s now see how #group_by can potentially work for a string array:
     </p>
     <p>
-      "Bonds", "McGwire", "Sosa", "Palmeiro", "A-Rod", "Clemens", "Pettitte", "Cabrera", "Giambi", "Cruz", "Canseco", "Bartolo", "Anderson", "Braun"].group_by { |s| s[0] }   
+      ["Bonds", "McGwire", "Sosa", "Palmeiro", "A-Rod", "Clemens", "Pettitte", "Cabrera", "Giambi", "Cruz", "Canseco", "Bartolo", "Anderson", "Braun"].group_by { |s| s[0] }   
     </p>
     <p> 
       => {"B"=>["Bonds", "Bartolo", "Braun"], "M"=>["McGwire"], "S"=>["Sosa"], "P"=>["Palmeiro", "Pettitte"], "A"=>["A-Rod", "Anderson"], "C"=>["Clemens", "Cabrera", "Cruz", "Canseco"], "G"=>["Giambi"]}
     </p>
     <p>
-      For this exercise, I input a list of MLB players (extra credit if you see the correlation in the names) and I asked group_by to return them grouped by the first letter in their names.  The first letter is the key, and the associated values are the newly organized names that start with that key.  Here's another one where I group my cohort buddy's names by name length.    
+      For this exercise, I input a list of MLB players (extra credit if you see the correlation in the names) and I asked #group_by to return them grouped by the first letter in their names.  The first letter is the key, and the associated values are the newly organized names that start with that key.  Here's another one where I group my cohort buddy's names by name length.    
     </p>
     <p>
       ["Jeffrey", "Christopher","Dan","Max", "Natalia", "Trevor", "Leo"].group_by{|name| name.length} <br>
