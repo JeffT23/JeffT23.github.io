@@ -7,85 +7,25 @@
 </head>
 
 <body>
-  <div class= "header"><h1>Title </h1></div>
+  <div class= "header"><h1>Making NFL Player Cards with Ruby Classes</h1></div>
   <!--<h2>The subtitle, if you want it</h2>-->
-  <h4 id="date"><strong><em>Today's Date</em></strong></h4>
+  <h4 id="date"><strong><em>January 1, 2014</em></strong></h4>
 
   <div class="content">
     <section>
     <p>
-      Your first paragraph goes here. 
+      Growing up, one of my favorite things to do was play the NFL's Madden video game series.  Over the years, the video game has gotten
+      so realistic.  Not only have the graphics gotten better, but the game's creators have managed to create a ratings system that ranks every player based on their personal attributes. These rankings have grown in popularity, as fans and the players themselves like to debate the numbers assigned to the avatars in the game.  Below is a Ruby class structure that will output a player card containing a subset of these rankings.  Let's take a look at the code first, and then 'll explain what's going on. 
+    </p>
+    <p>  
+         <img id="Code Snippet 1" src="/../images/code1.png">
+         <img id="Code Snippet 2" src="/../images/code2.png">
+         <img id="Output" src="/../images/output.png">
     </p>
     <p>
-      <p>
-  class NflPlayerCard 
-  attr_reader :position, :height, :weight, :awareness, :speed, :strength, :tackling, :break_tackles, :accuracy 
-              
-  def initialize (name, number, team)
-    @name = name
-    @number = number
-    @team = team
-  end
-
-  def appearance
-    puts "Please enter the player's height"
-      @height = gets.chomp.to_s
-    puts "Please enter the player's weight"
-      @weight = gets.chomp.to_s
-  end
-
-  def position
-    puts "What is the player's position"
-      @position = gets.chomp.to_s
-    puts "What is the player's awareness rating?"
-      @awareness = gets.chomp.to_s
-    puts "What is the player's speed rating?"
-      @speed = gets.chomp.to_s
-    puts "What is the player's strength rating?"
-      @strength = gets.chomp.to_s
-    if @position == "Strong Safety"
-      puts "What is the player's tackling ability?"
-      @tackling = gets.chomp.to_s
-    end
-    if @position == "Running Back"
-      puts "What is the player's ability to break tackles?"
-      @break_tackles = gets.chomp.to_s
-    end
-    if @position == "Quarterback"
-      puts "What is the player's throwing accuracy?"
-      @accuracy = gets.chomp.to_s
-    end
-  end
-
-    def output 
-      puts "----------------------------------------------------"
-      puts @name.to_s + "  #" + @number.to_s + "  " + @team.to_s       
-      puts @height + "     " +  @weight + "lbs    " + @position               
-      puts "----------------------------------------------------"
-      puts "PLAYER ATTRIBUTES"
-      puts "Awareness: " + @awareness
-      puts "Speed: " + @speed
-      puts "Strength: " + @strength
-      if @position == "Strong Safety"
-        puts "Tackling: " + @tackling
-      end
-      if @position == "Running Back"
-        puts "Ability to Break Tackles: " + @break_tackles
-      end
-      if @position == "Quarterback"
-        puts "Accuracy: " + @accuracy
-      end
-    end
-  end 
-
-
-troy = NflPlayerCard.new("Troy Polamalu", 43, "Pittsburgh Steelers")
-troy.appearance
-troy.position
-troy.output</p> 
-    </p>
-    <p>
-      Your third paragraph goes here.  
+      As you know, almost everything in Ruby is an object.  A class is simply a way of organizing and producing objects with similar attributes and methods.  Here we are grouping together NFL players.  We start a class with the "class" keyword followed by the name of the class in CamelCase (here: NflPlayerCard).  Next up is the #initialize method which is used by the class to "boot up" each object the class creates.  In our example, you can see that each instance of the NFLPlayerCard class is initialized with the player's name, number, and team name.  Within the body of the initialize method, we assign instance variables (denoted by an @ symbol in front of the variable name) for these 3 inputs.  In our example for instance, we create a troy instance of the NFLPlayerCard class.  We initialize this class with "Troy Polamalu", 43, and "Pittsburgh Steelers", respectively.  These @name, @number, and @team variables belong to the "troy" instance of NFLPlayerCard, hence the name instance variable.  Now, there are other attributes that we want available to us in our NFLPlayerCard class.  For these, Ruby has provided us with its attr methods.  As you can see, the attr_reader method puts at our disposal the following attributes that we can assign to 
+      our player instances: :position, :height, :weight, :awareness, :speed, :strength, :tackling, :break_tackles, :accuracy. 
+    </p>  
    
       <!-- copy and paste as many sections as you want to add paragraphs -->
   </section>
