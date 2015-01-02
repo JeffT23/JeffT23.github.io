@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <title>Jeff T's Blog </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/../stylesheets/blog.stylesheet.css "> 
+  
+</head>
+
+<body>
+  <div class= "header"><h1>Title </h1></div>
+  <!--<h2>The subtitle, if you want it</h2>-->
+  <h4 id="date"><strong><em>Today's Date</em></strong></h4>
+
+  <div class="content">
+    <section>
+    <p>
+      Your first paragraph goes here. 
+    </p>
+    <p>
+      <p>
+  class NflPlayerCard 
+  attr_reader :position, :height, :weight, :awareness, :speed, :strength, :tackling, :break_tackles, :accuracy 
+              
+  def initialize (name, number, team)
+    @name = name
+    @number = number
+    @team = team
+  end
+
+  def appearance
+    puts "Please enter the player's height"
+      @height = gets.chomp.to_s
+    puts "Please enter the player's weight"
+      @weight = gets.chomp.to_s
+  end
+
+  def position
+    puts "What is the player's position"
+      @position = gets.chomp.to_s
+    puts "What is the player's awareness rating?"
+      @awareness = gets.chomp.to_s
+    puts "What is the player's speed rating?"
+      @speed = gets.chomp.to_s
+    puts "What is the player's strength rating?"
+      @strength = gets.chomp.to_s
+    if @position == "Strong Safety"
+      puts "What is the player's tackling ability?"
+      @tackling = gets.chomp.to_s
+    end
+    if @position == "Running Back"
+      puts "What is the player's ability to break tackles?"
+      @break_tackles = gets.chomp.to_s
+    end
+    if @position == "Quarterback"
+      puts "What is the player's throwing accuracy?"
+      @accuracy = gets.chomp.to_s
+    end
+  end
+
+    def output 
+      puts "----------------------------------------------------"
+      puts @name.to_s + "  #" + @number.to_s + "  " + @team.to_s       
+      puts @height + "     " +  @weight + "lbs    " + @position               
+      puts "----------------------------------------------------"
+      puts "PLAYER ATTRIBUTES"
+      puts "Awareness: " + @awareness
+      puts "Speed: " + @speed
+      puts "Strength: " + @strength
+      if @position == "Strong Safety"
+        puts "Tackling: " + @tackling
+      end
+      if @position == "Running Back"
+        puts "Ability to Break Tackles: " + @break_tackles
+      end
+      if @position == "Quarterback"
+        puts "Accuracy: " + @accuracy
+      end
+    end
+  end 
+
+
+troy = NflPlayerCard.new("Troy Polamalu", 43, "Pittsburgh Steelers")
+troy.appearance
+troy.position
+troy.output</p> 
+    </p>
+    <p>
+      Your third paragraph goes here.  
+   
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+  </div>
+ 
+
+</body>
+</html>
+
+
+
+
+
