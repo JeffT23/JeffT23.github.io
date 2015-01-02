@@ -20,12 +20,17 @@
     <p>  
          <img id="Code Snippet 1" src="/../images/code1.png">
          <img id="Code Snippet 2" src="/../images/code2.png">
-         <img id="Output" src="/../images/output.png">
+         
     </p>
     <p>
-      As you know, almost everything in Ruby is an object.  A class is simply a way of organizing and producing objects with similar attributes and methods.  Here we are grouping together NFL players.  We start a class with the "class" keyword followed by the name of the class in CamelCase (here: NflPlayerCard).  Next up is the #initialize method which is used by the class to "boot up" each object the class creates.  In our example, you can see that each instance of the NFLPlayerCard class is initialized with the player's name, number, and team name.  Within the body of the initialize method, we assign instance variables (denoted by an @ symbol in front of the variable name) for these 3 inputs.  In our example for instance, we create a troy instance of the NFLPlayerCard class.  We initialize this class with "Troy Polamalu", 43, and "Pittsburgh Steelers", respectively.  These @name, @number, and @team variables belong to the "troy" instance of NFLPlayerCard, hence the name instance variable.  Now, there are other attributes that we want available to us in our NFLPlayerCard class.  For these, Ruby has provided us with its attr methods.  As you can see, the attr_reader method puts at our disposal the following attributes that we can assign to 
-      our player instances: :position, :height, :weight, :awareness, :speed, :strength, :tackling, :break_tackles, :accuracy. 
+      As you know, almost everything in Ruby is an object.  A class is simply a way of organizing and producing objects with similar attributes and methods.  Here we are grouping together the attributes of NFL players.  We start a class with the "class" keyword followed by the name of the class in CamelCase (here: NflPlayerCard).  Next, we set up the #initialize method which is used by the class to "boot up" each object the class creates.  In our example, you can see that each instance of the NflPlayerCard class is initialized with the player's name, number, and team name.  Within the body of the initialize method, we assign instance variables (denoted by an @ symbol in front of the variable name) for these 3 inputs.  In our example for instance, we create a "troy" instance of the NflPlayerCard class.  We initialize this class with "Troy Polamalu", 43, and "Pittsburgh Steelers", respectively.  The @name, @number, and @team variables belong to the "troy" instance of NFLPlayerCard, hence the name instance variable.  
+    </p>
+    <p>
+      Now, there are also other attributes that we want available to us in our NflPlayerCard class.  For this, Ruby has provided us with its attr methods.  Utilizing the attr_reader method puts at our disposal the following attributes that we can now assign to our player instances: :position, :height, :weight, :awareness, :speed, :strength, :tackling, :break_tackles, :accuracy.  These variables are now available to all of our instance methods.  As you can see, I've used these variables quite liberally in the #appearance and #position methods, and then in the #output method used to display the player card to the screen.  Incidentally, that will look a little something like this:   
     </p>  
+    <p>
+        <img id="Output" src="/../images/output.png">
+    </p>
    
       <!-- copy and paste as many sections as you want to add paragraphs -->
   </section>
