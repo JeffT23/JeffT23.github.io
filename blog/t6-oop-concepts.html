@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+  <title>Jeff T's Blog </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/../stylesheets/blog.stylesheet.css "> 
+  
+</head>
+
+<body>
+  <div class= "header"><h1>Blocks, Procs, and Lambdas Explained</h1></div>
+  <!--<h2>The subtitle, if you want it</h2>-->
+  <h4 id="date"><strong><em>January 8, 2015</em></strong></h4>
+
+  <div class="content">
+    <section>
+    <p>
+      I want to talk a little today about blocks and their close relatives: Procs and Lambdas.  Now all 3 provide us with ways to group code in Ruby, but there are subtle differences between them which I want to address.  Let’s start with blocks.  
+    </p>
+    <p>
+      A block in Ruby is just a bit of code that can be executed.  Blocks syntax commonly uses either a do…end construct or curly braces, {}.  They are commonly used in conjunction with iterators like #each to act on every element of an array or hash. See below: 
+    </p>
+    <p>
+      <img id="Code Snippet 1" src="/../images/names.png">
+    </p> 
+    <p>
+      The applications for the block are endless: we can use any number of methods on a block to extract the information we need.  Here’ s a snippet of code that will return the square root of every integer from 100 down to 4. 
+    </p> 
+    <p>
+      <img id="Code Snippet 1" src="/../images/sqrt.png">
+    </p> 
+    <p>
+      However, the block is not without its limitations.  Although most things in Ruby are objects, blocks are NOT.  This means that the block is ideal for ‘one-time use’ code.  For something more reusable, you will want to go with a procedure, or proc.  Procs can be thought of “saved objects” and can be named and called similar to methods.  Below is how you would set up a proc that returns the area of a triangle. 
+    </p> 
+    <p>
+      <img id="Code Snippet 1" src="/../images/triange_area.png">
+    </p> 
+    <p>
+      So procs are full-fledged objects that can be reused to execute code.  A lambda is pretty much the same thing, albeit with slightly different syntax.  See the example below for a lambda that doubles the input array. 
+    </p>  
+    <p>
+      <img id="Code Snippet 1" src="/../images/doubler.png">
+    </p> 
+    <p>
+      So what’s the difference between lambdas and procs you ask?  There are two big distinctions: 
+      1) A lambda checks the number of arguments passed to it, but the proc will not.  Whereas a lambda will throw an ArgumentError at you for the wrong number of arguments, the proc will ignore this oversight and pass a nil value.  
+      2) When a lambda returns, it will pass control back to the calling method.  In contrast, when a proc returns, it does so immediately.  
+    </p> 
+
+   
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+  </div>
+ 
+
+</body>
+</html>
+
+
+
+
+
