@@ -1,0 +1,71 @@
+* {
+	font-family: Courier New;
+}
+
+body{
+	background-color: #f9f4ee;
+}
+
+h1 {
+	font-size: 70px;
+	/*font-family: Garamond, Arial;*/
+	color: white;
+}
+
+#header{
+	background-color: gray; 
+}
+
+p {
+	font-size: 20px;
+}
+
+a:link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+thead {
+	background-color: #a91515;
+	color: white;
+	font-size:40px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+tbody {
+	background-color:white;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
