@@ -1,4 +1,10 @@
-.header{
+
+body {
+	background-color: #ccebff; 
+	color: #7D7D80;
+	}
+
+.header {
 	font-size: 20px; 
 	font-family: Arial; 
 	text-align: center; 
@@ -8,10 +14,11 @@
 	display:block;
 }
 
-#date{margin-left:100px;
+#date {
+	margin-left:100px;
 }
 
-.content{
+.content {
 	font-size:17px; 
 	font-family: Times,Arial,serif; 
 	border: solid black 2px;
@@ -23,5 +30,3 @@
 	display:block;
 }
 
-body{background-color: #d8d8d8;
-	}
