@@ -8,7 +8,7 @@ body {
 	font-size: 20px; 
 	font-family: Arial; 
 	text-align: center; 
-	border: solid black 2px;
+	border: 5px solid #3399FF;
 	border-radius:25px;
 	padding:0;
 	display:block;
@@ -21,7 +21,7 @@ body {
 .content {
 	font-size:17px; 
 	font-family: Times,Arial,serif; 
-	border: solid black 2px;
+	border: 5px solid #3399FF;
 	text-align:left; 
 	margin-right:100px;
 	margin-left:100px;
